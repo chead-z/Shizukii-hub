@@ -165,3 +165,5 @@ Tab:AddButton({
 local Section = Tab:AddSection({
 	Name = "Qualquer Dúvida Entre em Contato em Nosso Server!!"
 })
+
+OrionLib:Init()
