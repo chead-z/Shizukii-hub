@@ -152,10 +152,10 @@ Tab:AddSlider({
 })
  
 Tab:AddSlider({
-	Name = "Poder do Puko",
+	Name = "Poder do Pulo",
 	Min = 16,
 	Max = 300,
-	Default = 5,
+	Default = 46,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "jump",
