@@ -151,7 +151,7 @@ Tab:AddSlider({
 Tab:AddToggle({
 	Name = "Aimbot",
 	Default = false,
-	Callback = function(exec)
+	Callback = function()
 		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/scripttest8/main/aimbot?token=GHSAT0AAAAAACOBZV3WVSDP44N3UZ75ZSEEZOJHEWQ"))())
 	end    
 })
