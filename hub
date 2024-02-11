@@ -166,6 +166,6 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Servidor do Discord",
 	Callback = function()
-      		setclipboard(https://discord.gg/yuaN9bG8Mm)
+      	setclipboard("https://discord.gg/yuaN9bG8Mm")
   	end    
 })
