@@ -157,12 +157,15 @@ Tab:AddSlider({
 	end    
 })
  
-local PlayerTab Window: MakeTab({
-        Name "Créditos",
-        Icon "rbxassetid://4483345998",
-        PremiumOnly = false
+local Tab = Window:MakeTab({
+	Name = "Créditos",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "Qualquer Dúvida entre em contato no servidor!!"
+Tab:AddButton({
+	Name = "Servidor do Discord",
+	Callback = function()
+      		setclipboard(eu)
+  	end    
 })
