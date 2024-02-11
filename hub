@@ -1,35 +1,86 @@
--- Script: Shizukii Hub
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
--- Variáveis
-local sessions = {
-    {title = "Jogos", color = Color3.fromRGB(255, 0, 0)},
-    {title = "Infinite Yield", color = Color3.fromRGB(0, 255, 0)},
-    {title = "Shizukii Discord", color = Color3.fromRGB(0, 0, 255)}
-}
-local selectedSession = 1
+--hub
 
--- Funções
-function drawSession(session, index)
-    local x, y = 100, 100 + 50 * index
-    drawBox(x, y, 200, 40, session.color)
-    drawText(x + 100, y + 20, session.title, Color3.white)
-end
+local Window = OrionLib:MakeWindow({Name = "Shizukii hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Shizukii Test"})
 
-function onSessionSelect(index)
-    selectedSession = index
-end
+--tabs
 
--- Interface
-drawBackground(Color3.fromRGB(40, 40, 40))
+local Tab = Window:MakeTab({
+	Name = "scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-for i, session in ipairs(sessions) do
-    drawSession(session, i)
-end
+--"section"
 
--- Animações
-tween(selectedSession, function(t)
-    drawSession(sessions[selectedSession], t)
-end, 0.5)
+local Section = Tab:AddSection({
+	Name = "Universal script"
+})
 
--- Integração com Hub
-hub:RegisterSession("Shizukii Hub", onSessionSelect)
+--notifer user
+
+OrionLib:MakeNotification({
+	Name = "shizukii",
+	Content = "Obrigado por usar Shizukii Hub<3",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--button
+
+Tab:AddButton({
+	Name = "ghost script",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))())
+  	end    
+})
+
+Tab:AddButton({
+	Name = "shiftlock",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet('https://pastebin.com/raw/CjNsnSDy'))())
+  	end    
+})
+
+--section
+
+local Section = Tab:AddSection({
+	Name = "Blox Fruits"
+})
+
+--section
+
+local Section = Tab:AddSection({
+	Name = "Resolução 4:3"
+})
+
+
+--toggle resolutom
+
+Tab:AddButton({
+	Name = "Tela esticada",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/ySixxNz/SIXHUB-UNIVERSAL/SixHub-Universal/SixHub-Universal"))() )
+  	end    
+})
+
+-- section
+
+local Section = Tab:AddSection({
+	Name = "Muder Mystery 2"
+})
+
+Tab:AddButton({
+	Name = "Dark Cheat Client",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))())
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Lunar Hub",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/LunarHub/main/Bypassed", true))())
+  	end    
+})
