@@ -147,6 +147,14 @@ Tab:AddSlider({
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end    
 })
+
+Tab:AddToggle({
+	Name = "Aimbot",
+	Default = false,
+	Callback = function(exec)
+		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/scripttest8/main/aimbot?token=GHSAT0AAAAAACOBZV3WVSDP44N3UZ75ZSEEZOJHEWQ"))())
+	end    
+})
  
 local Tab = Window:MakeTab({
 	Name = "Créditos",
