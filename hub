@@ -104,13 +104,6 @@ Tab:AddButton({
 })
  
 Tab:AddButton({
-	Name = "Lunar Hub",
-	Callback = function(exec)
-      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/LunarHub/main/Bypassed", true))())
-  	end    
-})
- 
-Tab:AddButton({
 	Name = "Eclipse Hub (apenas no fluxus)",
 	Callback = function(exec)
       		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))())
@@ -153,7 +146,7 @@ Tab:AddSlider({
  
 Tab:AddSlider({
 	Name = "Poder do Pulo",
-	Min = 16,
+	Min = 50,
 	Max = 300,
 	Default = 46,
 	Color = Color3.fromRGB(255,255,255),
