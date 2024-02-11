@@ -166,8 +166,10 @@ local PlayerTab Window: MakeTab({
 Tab:AddButton({
 	Name = "Servidor do Discord",
 	Callback = function()
-      		setclipboard("https://discord.gg/yuaN9bG8Mm"
- 
+   		setclipboard('https://discord.gg/yuaN9bG8Mm')
+	end)
+})
+
 local Section = Tab:AddSection({
 	Name = "Qualquer Dúvida entre em contato no servidor ou entre em contato com: chead.y!!"
 })
