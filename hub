@@ -100,7 +100,16 @@ Tab:AddButton({
       		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))())
   	end    
 })
+
+
  
+Tab:AddButton({
+	Name = "Symphony Hub",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/Shizukii/main/Hub.lua", true))())
+  	end    
+})
+
 local Section = Tab:AddSection({
 	Name = "Blade Ball"
 })
