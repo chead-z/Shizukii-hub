@@ -27,6 +27,13 @@ local Section = Tab:AddSection({
  
  
 --button
+Tab:AddButton({
+	Name = "Shizukii Aimbot",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/Shizukii-Aimbot/main/Shizukii%20Aimbot.txt"))())
+  	end    
+})
+ 
  
 Tab:AddButton({
 	Name = "Shiftlock",
