@@ -36,8 +36,8 @@ Tab:AddButton({
 
  Tab:AddButton({
 	Name = "Shizukii Aimbot (Mobile em Breve)",
-	Callback = function(exec)
-      		print()
+	Callback = function()
+      		print(foda :()
   	end    
 })
  
