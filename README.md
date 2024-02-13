@@ -1,1 +1,3 @@
-suporte  https://discord.gg/yuaN9bG8Mm
+# Shizukii
+
+https://discord.gg/yuaN9bG8Mm
