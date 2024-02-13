@@ -127,6 +127,18 @@ Tab:AddButton({
 })
  
 local Section = Tab:AddSection({
+	Name = "Tapping Legends X"
+})
+
+
+Tab:AddButton({
+	Name = "Hyper Hub",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))())
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Mais Scripts em Breve!!"
 })
  
