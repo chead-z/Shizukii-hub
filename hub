@@ -1,7 +1,13 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))() --This Will Load The Script Code
 local Window = OrionLib:MakeWindow({Name = "Shizukii Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Shizukii Test"})
-local Player = game.Players.LocalPlayer
- 
+local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
+  local Window = OrionLib:MakeWindow({
+		Name = "Hyper key system ",
+		HidePremium = false,
+		SaveConfig = true,
+		ConfigFolder = "OrionTest",
+        IntroText = "Loading Shizukii Hub..." 
+
 --notifer user
  
 OrionLib:MakeNotification({
