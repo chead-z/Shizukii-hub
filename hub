@@ -159,6 +159,24 @@ Tab:AddSlider({
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "Reset"
+})
+
+Tab:AddButton({
+	Name = "Resetar Velocidade",
+	Callback = function()
+	      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16      		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Resetar Pulo",
+	Callback = function()
+	      		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50      		
+  	end    
+})
  
 local Tab = Window:MakeTab({
 	Name = "Créditos",
