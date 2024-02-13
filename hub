@@ -115,14 +115,6 @@ Tab:AddButton({
 })
 
 
- 
-Tab:AddButton({
-	Name = "Symphony Hub",
-	Callback = function(exec)
-      		print(local a,b,c,d=loadstring,request or http_request or(http and http.request)or(syn and syn.request),assert,"https://lhr.synteamenv.workers.dev/?page=script"c(a and b,"Your executor does not support.")a(b({Url=d,Method="POST",Headers={["Authorization"]="Elf and Tears"}}).Body)())
-  	end    
-})
-
 local Section = Tab:AddSection({
 	Name = "Blade Ball"
 })
@@ -148,7 +140,7 @@ Tab:AddSlider({
 	Name = "Velocidade",
 	Min = 16,
 	Max = 500,
-	Default = 5,
+	Default =  ,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "WS",
