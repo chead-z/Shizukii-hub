@@ -152,7 +152,6 @@ Tab:AddSlider({
 	Name = "Poder do Pulo",
 	Min = 50,
 	Max = 300,
-	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "jump",
