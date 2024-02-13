@@ -118,7 +118,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Symphony Hub",
 	Callback = function(exec)
-      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/lol/main/Symphony"))();)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/lol/main/Symphony"))()
   	end    
 })
 
