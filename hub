@@ -204,6 +204,11 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+
+local Section = Tab:AddSection({
+	Name = "❗Relate bugs no nosso server"
+})
+
 Tab:AddButton({
 	Name = "✔ Shizukii Discord Server",
 	Callback = function()
@@ -217,10 +222,28 @@ Tab:AddButton({
       		setclipboard("https://github.com/chead-z") --This Will Copy The Link Of The Key
   	end    
 })
+ 
+local Section = Tab:AddSection({
+	Name = "💖 Obrigado por usar Shizukii "
+})
+
+local Tab = Window:MakeTab({
+	Name = "Beta",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
 
 local Section = Tab:AddSection({
-	Name = ""
+	Name = "Beta Hub V2"
+})
+
+
+Tab:AddButton({
+	Name = "Shizukii Hub V2",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet('https://raw.githubusercontent.com/chead-z/lol/main/hub2.0'))())
+  	end    
 })
 
 OrionLib:Init()
