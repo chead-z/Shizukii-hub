@@ -176,6 +176,7 @@ Tab:AddSlider({
 	Name = "Velocidade",
 	Min = 16,
 	Max = 500,
+	Default = nil,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "WS",
