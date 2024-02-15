@@ -258,7 +258,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Shizukii Hub V2",
 	Callback = function(exec)
-      		print(loadstring(game:HttpGet('https://raw.githubusercontent.com/chead-z/lol/main/Hub2.0'))())
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/chead-z/lol/main/HubV2.lua"))();)
   	end    
 })
 
