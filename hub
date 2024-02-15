@@ -142,7 +142,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Hyper Hub",
 	Callback = function(exec)
-      		print(loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))())
+      		print(loadstring(game:HttpGet('https://raw.githubusercontent.com/rimuru7xs/autotap2/main/if%20game.txt'))())
   	end    
 })
 
