@@ -72,6 +72,22 @@ Tab:AddButton({
 local Section = Tab:AddSection({
 	Name = "Blox Fruits"
 })
+
+
+Tab:AddButton({
+	Name = "Redz Hub",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))())
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Luarmor Hub",
+	Callback = function(exec)
+      		print(loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))())
+  	end    
+})
  
 Tab:AddButton({
 	Name = "Domadic Hub",
