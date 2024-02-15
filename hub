@@ -205,15 +205,22 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "Nosso Servidor do Discord",
+	Name = "✔ Shizukii Discord Server",
 	Callback = function()
       		setclipboard("https://discord.gg/yuaN9bG8Mm") --This Will Copy The Link Of The Key
   	end    
-}) 
+})
+
+Tab:AddButton({
+	Name = "🖤 Chead.y Dev Github",
+	Callback = function()
+      		setclipboard("https://github.com/chead-z") --This Will Copy The Link Of The Key
+  	end    
+})
 
 
 local Section = Tab:AddSection({
-	Name = "Qualquer Dúvida Entre em Contato em Nosso Server!!"
+	Name = ""
 })
 
 OrionLib:Init()
